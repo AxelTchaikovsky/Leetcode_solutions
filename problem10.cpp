@@ -4,7 +4,7 @@ bool isMatch(char * s, char * p)
     int memo[50][50] = {{0,},};
     int flag[50][50] = {{0,},};
 
-    bool dp(int i, intj)
+    bool dp(int i, int j)
     {
         bool ret;
         if(flag[i][j]) return memo[i][j];
@@ -21,6 +21,6 @@ bool isMatch(char * s, char * p)
         return ret;
     }
     
-    return dp(0.0)
+    return dp(0,0)
 
 }
